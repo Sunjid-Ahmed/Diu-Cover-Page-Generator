@@ -1,0 +1,78 @@
+.container .row .image .card-img {
+    width: 250px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-between {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview,
+.print {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.edit {
+    display: block;
+    margin: 0 auto;
+}
+
+.demo-section {
+    margin-top: 20px;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+.container .popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    display: none;
+}
+
+.container .popup-img span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 90%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+
+    .container .popup-img img {
+        width: 90%;
+        height: 95%;
+    }
+}
